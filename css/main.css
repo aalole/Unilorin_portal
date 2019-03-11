@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/*
+  ==============================================
+  Grid
+  ==============================================
+*/
+
+*,
+*:before,
+*:after, {
+
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box; 
+}
+
+/*
+  ==============================================
+  body
+  ==============================================
+*/
+
+body{
+    background-color: cornflowerblue;
+}
+.page_topmost ul li{
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.page_topmost{
+    padding-left: 200px;
+    color: white
+}
+
+.L3{
+  float: right;
+  padding-right: 300px;
+}
+
+.L2{
+  margin-left: 150px;
+}
+
+.notice{
+    color: white;
+}
+
+/*
+  ==============================================
+  container
+  ==============================================
+*/
+
+.container{
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 1000px; 
+    max-width: 100%;
+    }
+
+.container{
+    border-top: 1px solid grey;
+    margin-top: 25px;
+}
+
+
+
+/*
+  ==============================================
+  container header
+  ==============================================
+*/
+.header ul li{
+  display: inline-block;
+  padding-top: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.list_1{
+  
+  padding-left: 100px;
+}
+.list_2{
+  float: right;
+  padding-right: 50px;
+}
+
+.header{
+    width: 100%;
+    height: 150px;
+    background-color: blue;
+    color: white;
+}
+
+
+.header-left{
+  padding-left: 30px;
+  padding-top: 60px;
+}
+
+
+/*
+  ==============================================
+            navigation menu
+  ==============================================
+*/
+
+.nav{
+    height: 40px;
+}
+.nav ul li{
+    display: inline-block;
+    padding-top: 22px;
+}
+
+.list_4{
+    float: right;
+}
+.list_3{
+    padding-left: 160px;
+}
+.list_2{
+    padding-left: 80px;
+}
+
+.nav,
+.col-1-4,
+.notice{
+  background-color: royalblue;
+}
+
+/*
+====================================
+        Grid
+====================================
+*/
+
+
+.col-1-4{
+    width: 30%;
+    height: 350px;
+  }
+  .col-1-4 a{
+     line-height: 30px;
+ }
+  
+ a{
+   text-decoration: none;
+   color: white;
+
+ }
+  
+  .col-3-4{
+    width: 65%;
+    max-width: 100%;
+    float: right;
+    background-color: white;
+    padding-left: 10px;
+    
+  }
+  .col-3-4 h2{
+      color: darkblue;
+  }
+  .col-1-4,
+  .col-3-4{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .col-3-4 input{
+    background-color: rgba(238, 255, 0, 0.527)
+  }
+  .col-3-4 button{
+    background-color: red;
+    color: white;
+  }
+  .col-3-4 ul li{
+    line-height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .col-3-4 h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+ 
+  .submit input{
+    background-color: red; 
+    color: white;
+  }
+
+  /*
+====================================
+        form
+====================================
+*/
+
+
+
+.form1{
+    border: 1px solid;
+    border-color: grey;
+    margin: 0 10px 0 10px;
+    height: 332px;
+    padding-top: 24px;
+}
+.form1 p{
+  text-align: center;
+}
+
+.form_group {  
+    padding: 5px;   
+  display: block;  
+  
+ }  
+
+
+  label {  
+    float: left;  
+    padding-left: 30px;   
+    display: block;  
+    width: 200px;  
+  }  
+  .reg_form h2{
+      text-align: center;
+  }
+
+  .submit{
+    margin-left: 50px;
+}
+
+ /*
+====================================
+        footer
+====================================
+*/
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+}
+
+.footer small{
+    float: right;
+    padding-top: 20px;
+    padding-right: 120px;
+    color: white;
+}
+
+
+/*
+====================================
+        uilug-portal css
+====================================
+*/
+
+.body{
+  background-color: white; 
+}
+.ug{
+  width: 1150px; 
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/*
+====================================
+        header
+====================================
+*/
+.top-header{
+  margin-top: 30px;
+  height: 120px;
+  background: transparent;
+  color: #29166F;
+  background-color: ghostwhite;
+  text-align: center;
+}
+ .top-header h1{
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 125%;
+  font-weight: bold;
+  padding-top: 5px;
+ }
+
+
+.top-header h2{
+  float: left;
+  font-weight: 600;
+  color:darkolivegreen;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.top-header p{
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*
+====================================
+        header nav menu
+====================================
+*/
+.header-nav ul li{
+  display: inline-block;
+  font-weight: bold;
+  color:white;
+  padding-top: 15px;
+}
+
+.header-nav{
+  height: 40px;
+  margin-top: 20px;
+  background-color: #29166F;
+  margin-bottom: 20px;
+}
+
+.h1{
+  margin-left: 60px;
+}
+.h2{
+  margin-left: 120px;
+}
+
+.h3{
+  margin-left: 180px;
+}
+
+/*
+====================================
+        course form css
+====================================
+*/
+.course_reg{
+  background-color: white;
+}
+.crs_form_container{
+  width: 1000px;
+  max-width: 100%;
+  margin: 10px 20px 10px 110px; 
+}
+
+.reg-header{
+  height: 120px;
+  background-color: #29166F;
+  text-align: center;
+  padding-right: 15px;
+  margin: auto;
+  margin-left: 100px;
+}
+.reg-header img{
+  width: 7%;
+  height: 50%;
+  margin-top: 6px;
+}
+.reg-header h1{
+  color: white;
+}
+.reg-list ul li{
+  display: inline-block;
+  color: white;
+}
+.reg-list2{
+  float: right;
+  margin-right: 100px;
+}
+.reg-list1{
+  float: left;
+  margin-left: 100px;
+}
+
+.row{
+  margin-top: 30px;
+}
+.cousre-form-table th, td{
+    border: 1px solid dodgerblue;
+    
+}
+th, td {
+    padding: 15px;
+}
+.a{
+  width: 42%;
+  margin-right: 10%;
+  padding-right: 60px;
+}
+.b{
+  width: 42%;
+  margin-left: 5%;
+  padding-left: 80px;
+  padding-left: 40px;
+}
+
+/*
+================================
+course reg top
+================================
+*/
+.crs_form_top{
+  text-align: center;
+}
+.col-sm-4{
+  margin-bottom: 20px;
+  margin-left: 38%;
+}
+.col-sm-4 td{
+  width: 30px;
+}
+
+.td{
+  background-color: #29166F;
+  color: white;
+}
+
+.crs_form_top p{
+  color: #29166F;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.crs_form_top h1{
+  color: darkolivegreen;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+.crs_form_top h1, p{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.sess-aside{
+  margin-top: 30px;
+}
+
+/*
+================================
+login page
+================================
+*/
+
+.login{
+  background-color: #29166F;
+  color: white;
+  height: 350px;
+}
+body{
+  background-color: white;
+}
+.col-sm-4 h1{
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 20px;
+}
