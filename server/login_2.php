@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>login form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<script type="text/javascript" src="../js/jquery.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
     <script src="main.js"></script>
 </head>
 <body>
+<?php 
+session_start();
+
+$failureResponse =$_SESSION['failureMsg'];
+
+// require_once('connect.php');
+
+?>
+
+
 	<div class="ug">
 		<header class="top-header">
 				<h1>University of Ilorin</h1>
@@ -45,6 +55,8 @@
 								<div class="col-sm-4">
 									<h1>For registered users only</h1><br><br>
 									<form role="form" action="../server/login_action.php" method="post">
+									<p style= "color: red">error!!</P>
+										<?php echo $failureResponse?>
 										<div class="form-group">
 											<label for="email">LOGIN ID:</label>
 											<input type="email" class="form-control" id="email" name="email">

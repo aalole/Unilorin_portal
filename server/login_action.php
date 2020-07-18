@@ -16,7 +16,9 @@ $query=mysqli_query($conn, $result);
 header("location:welcome_action.php");
  }
 else{
-    echo 'noooooooooooooooooooooooooooooooooooo';
+    // echo 'Incorrect login parameters!! Please Try again';
+    $_SESSION['failureMsg'] = "Incorrect login parameters!! Please Try again";
+    header("location:login_2.php");
  }
 
 
